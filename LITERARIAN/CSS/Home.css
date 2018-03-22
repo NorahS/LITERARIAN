@@ -1,0 +1,255 @@
+body{
+			font-family: Arial, Halvetica, sans-serif; 
+			font-size: 15px;
+			line-height: 1.5;
+			padding: 0;
+			margin: 0;
+			background-color: #F1F2F2;
+		}
+		footer{
+			background-color: #A7C3CE;
+			font-size: 12px;
+			text-align: center;
+			color: #F1F2F2;
+			letter-spacing: 2px;
+			padding: 10px;
+			margin-top: 40px;
+			position: fixed;
+			bottom: 0px;
+			width: 100%;
+		}
+		.container-fluid{
+			width: 100%;
+			padding: 0;
+		}
+		.container{
+			width:80%;
+			margin: auto;
+			overflow: hidden;
+		}
+		/*For any title*/
+		.title{
+			font-size: 20px;
+			font-weight: bold ;
+			text-transform: uppercase;
+			letter-spacing: 8px; 
+			padding: 5px 0px;
+			color: #A7C3CE;
+			border-bottom: 2px solid #B43A47;
+		}
+		.secondtitle{
+			font-size: 15px;
+			font-weight: bold ;
+			text-transform: capitalize; 
+			padding: 5px 0px;
+			color: #505659;
+		}
+		/*For any text content*/
+		.content{ 
+			margin-top: 20px;
+			letter-spacing: 2px;
+			text-align: justify;
+		}
+		header{
+			padding: 25px;
+			min-height: 50px;
+		}
+		
+			#logo{
+				display: block;
+				margin: auto;
+			}
+	
+		nav ul{
+			list-style-type: none; 
+			margin-top: 0;
+			padding: 0;
+			text-align: center;
+		}
+		.navbar {
+			background-color: #F1F2F2;
+			border: 0;
+		}
+		.navbar #mainmenu {
+			margin-top: 20px;
+			text-align: center;
+		}
+		#mainmenu ul {
+			margin: auto;
+			float: none;
+			vertical-align: top;	
+		}
+		nav #mainmenu ul a{
+			
+			color: #505659;
+			text-decoration: none;
+			text-transform: capitalize;
+			font-size: 17px;
+			padding-top: 3px;
+			padding-bottom: 3px;
+		}
+		nav #mainmenu .current a{
+			border-bottom: 1px solid #B43A47;
+			font-weight: bold;
+		}
+		nav #mainmenu a:hover{
+			border-bottom: 1px solid #505659;
+		}
+		.navbar-nav {
+			width: 100%;
+			text-align: center;
+			margin: 0;
+		  }
+		.navbar-nav li {
+			float: none;
+			display: inline-block;
+		  }
+		  
+		.dropdown li{
+			border: none;
+			display: block;
+			background-color: #F1F2F2;
+			margin-top: 0px;
+		}
+		.dropdown li a:hover{
+			margin: 0px;
+			background-image: none;
+			background-color: #A7C3CE;
+		}
+		
+		#parallax {
+			
+			background-image: url("Img/stock3.jpg");
+
+			min-height: 700px; 
+
+			background-attachment: fixed;
+			background-position: center;
+			background-repeat: no-repeat;
+			background-size: cover;
+		}
+		
+			#parallax h1{
+				margin-top: 250px;
+				font-size: 55px;
+				margin-bottom: 10px;
+				text-align: center;
+				color: #F1F2F2;
+			}
+			#parallax p{
+				font-size: 20px;
+				margin-bottom: 10px;
+				text-align: center;
+				color: #F1F2F2;
+				
+			}
+		#recently_added {
+			width: 80%;
+			margin: auto;
+			margin-top: 100px;
+			padding: 0;
+			min-height: 200px;
+			margin-bottom:200px;
+		}
+		.tableTitle{
+			margin-top: 50px;
+			text-align: center;
+			clear: both;
+		}
+		.scrollable{
+			border: 2px solid #A7C3CE;
+			width: 100%;
+			height:350px;
+			overflow:scroll; 
+			overflow-x: scroll;
+			overflow-y: hidden;
+		}
+		.insidescroll{
+			width:1800px;
+			padding: 5px;
+		}
+		
+		.preview{
+			width: 210px;
+			height:280px;
+			margin:20px;
+			text-align:center;
+			float:left; 
+			display:inline;
+			border: 2px solid #A7C3CE;
+		}
+		
+		
+		/*loading page*/
+		.loadlayer{
+			background-color: #A7C3CE;
+			position:fixed;
+			width: 100%;
+			height: 100%;
+			z-index: 100;
+			opacity: 0.8;
+			display: none;
+		}
+		.loading {
+			position: fixed;
+			top: 40%;
+			left: 43.4%;
+			margin: 0 auto;
+			width: 220px;
+			height: 130px;
+			padding: 10px;
+			z-index: 200;
+			display: none;
+		}
+
+		.dot {
+			position: absolute;
+			display: inline-block;
+			height: 20px;
+			width: 20px;
+			border-radius: 25px;
+			background-color: #F1F2F2;
+			bottom: 10px;
+		}
+
+		.dot-two {
+			margin-left: 85px;
+		}
+
+		.dot-three {
+			margin-left: 160px;
+		}
+		@keyframes move {
+			0% {
+				bottom: 10px;
+			}
+			50% {
+				bottom: 90px;
+			}
+			100% {
+				bottom: 10px;
+			}
+		}
+		.dot-one {
+			animation-name: move;
+			animation-duration: 1s;
+			animation-iteration-count: infinite;
+			animation-timing-function: ease-out;
+			animation-delay: 0;
+		}
+ 
+		.dot-two {
+			animation-name: move;
+			animation-duration: 1s;
+			animation-iteration-count: infinite;
+			animation-timing-function: ease-out;
+			animation-delay: 0.2s;
+		}
+ 
+		.dot-three {
+			animation-name: move;
+			animation-duration: 1s;
+			animation-iteration-count: infinite;
+			animation-timing-function: ease-out;
+			animation-delay: 0.4s;
+		}
